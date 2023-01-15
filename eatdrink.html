@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+.header{
+  background-image: url(https://i.pinimg.com/736x/be/4c/85/be4c855d85676a8b7825782f12f6709c.jpg);
+  background-repeat: repeat;
+  padding: 50px;
+  color: white;
+}
+
+.navbar{
+  background-color: #08A6D3;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navbar a.active {
+  background-color: black;
+  color: white;
+}
+
+.navbar a:hover{
+  background-color: black;
+  color: white;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  display: table;
+}
+
+.contact{
+  display: flex;
+  padding: 10px;
+}
+
+.contact * {
+  margin-left: 10px;
+}
+
+.info{
+  width: 75%;
+  border: solid 2px;
+  border-color: black;
+}
+
+.socmed{
+  width: 25%;
+  padding: 20px;
+  float: right;
+  font-size: 17px;
+}
+
+.footer {
+  display: flex;
+  border: solid 2px black;
+}
+.footer #copyright {
+  width: 75%;
+  padding: 20px;
+  margin-left: 20px;
+  float: left;
+}
+
+.footer #sitemap {
+  width: 25%;
+  justify-content: center;
+  float: right;
+}
+
+</style>
+<body>
+<div class="header">
+  <h1>Eat and drinks</h1>
+</div>
+<div class="navbar">
+    <a href ="VisitSelangor.html"> Home</a></li>
+    <a href ="eatdrink.html" class="active"> Eat&Drinks</a></li>
+    <a href ="attractions.html"> Attractions</a></li>
+    <a href ="tours.html"> Tours</a></li>
+    <a href ="accomodation.html"> Accommodation</a></li>
+</div>
+
+<h2>Website recommendation</h2>
+<div class="row">
+  <div class="column">
+    <img src="images/tuak.jpg" width=50%>
+    <br><p>Tuak is a Sarawakian term for rice wine. In Sabah, it is called lihing.<br> Rice wine is produced in all rice production countries such as Japan (sake),<br> Korea (makgeolli), Thailand (Sato), China (mi jiu) and Philippines (tapuy). Rice wine from different countries</p>
+  </div>
+  <div class="column">
+    <img src="images/Durian-Cendol.jpg" width=70%>
+    <br><p>Cendol is a layered ice dessert that is served on shaved ice, with worm-like green rice flour jelly, palm sugar syrup, and coconut milk on top. This dessert is commonly found in Southeast Asia countries, namely Malaysia, Singapore, Indonesia, Vietnam, and Thailand.</p>
+  </div>
+  <div class="column">
+    <img src="images/cincau.jpg" width=100%>
+    <br><p>It is created by using Chinese mesona and has a mild, slightly bitter taste. It is served chilled, with other toppings such as fruit, or in bubble tea or other drinks.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/09b2cdd7bb324afa8aa82dce584e4900_Hjh+Maimunah+Nasi+Ambeng.jpg" width=80%>
+    <br><p>Nasi ambeng or Nasi ambang is an Indonesian fragrant rice dish that consists of - but is not limited to - steamed white rice, chicken curry or chicken stewed in soy sauce, beef or chicken rendang, sambal goreng urap, bergedel, and serunding</p>
+  </div>
+  <div class="column">
+    <img src="images/bahulu kemboja.jpg" width=80%>
+    <br><p>Kuih bahulu is a traditional cake or snack usually baked in brass moulds which usually come in all sorts of sizes and shapes like fishes, flowers and most commonly, sea shells as those shown in this video above. As the main ingredient is egg, kuih bahulu is sometimes known as egg sponge cake.</p>
+  </div>
+  <div class="column">
+    <img src="images/lontong-bilis.jpg" width=70%>
+    <br><p>commonly found in Indonesia, Malaysia and Singapore. Rice is rolled inside a banana leaf and boiled, then cut into small cakes as a staple food replacement of steamed rice</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images/pejal.png" width=80%>
+    <br><p>Pecal is a common appetiser that can be found just about anywhere in Selangor. Known to be a traditional Javanese salad that merely consists of vegetables topped with a mouth-watering peanut sauce that can also be served with Ketupat or Lontong. </p>
+  </div>
+  <div class="column">
+    <img src="images/sate kajang.jpg" width=80%>
+    <br><p>There is various types of satay including chicken, beef, lamb, and fish, all grilled to perfection</p>
+  </div>
+  <div class="column">
+    <img src="images/wadai.png" width=80%>
+    <br><p>Back in the day, it has been traditionally practised by the Banjar community to plate up Wadai Kipeng on their Thanksgiving ceremony!</p>
+  </div>
+</div>
+<br><h4>Stay connected</h4>
+
+<div class="contact">
+  <div class="info">
+    <p>Join us for the latest update!</p>
+    <br>
+    <input type="text" id="email" placeholder="Email address">
+    <button onclick="message()">Sign up</button>
+</div>
+
+<div class="socmed">
+    <p>Connect with us</p>
+    <a href="https://www.instagram.com/syukk.ri/"><img src="images/instagram.png" width=15%></a>
+    <a href="https://twitter.com/syukkk_ri"><img src="images/twitter.png" width=15%></a>
+    <a href="https://www.facebook.com/syukri2001?mibextid=ZbWKwL"><img src="images/facebook.png" width=15%></a>
+</div>
+</div>
+
+<script>
+  function message() {
+      alert("Thank you for singing up");
+  }
+</script>
+
+<div class="footer">
+    <p id="copyright">Copyright</p>
+    <p id="sitemap"><a href="sitemap.pdf">Sitemap</a> | <a href="https://wa.me/60165349256">Contact Us</a></p>
+</div>
+</body>
+</html>

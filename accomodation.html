@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>accomodation</title>
+  </head>
+<style>
+  .header {
+    text-align: left;
+    padding: 50px;
+    background-image: url(https://www.shutterstock.com/image-vector/hotel-building-cartoon-vector-illustration-260nw-331698641.jpg);
+    color:black;
+    font-weight: bold;
+  }
+
+  body{
+    background-color:white;
+  }
+
+  h2{
+    color:black;
+    text-align:center;
+    font-family:'Courier New' ;
+  }
+
+  .navbar {
+    background-color: #08A6D3;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  .navbar .active {
+    background-color: black;
+    color: white;
+  }
+
+  .navbar a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .row::after{
+    content:"";
+    clear: both;
+    display:table;
+  }
+  .contact{
+    display:flex;
+    padding: 10px;
+  }
+  .contact * {
+    margin-left: 10px;
+  }
+  .info{
+    width:75%;
+    border:solid 2px black;
+  }
+  .socmed{
+    width: 25%;
+    padding: 20px;
+    float: right;
+    font-size: 17px;
+  }
+  .footer{
+    display:flex;
+    border:solid 2px black;
+  }
+  .footer #copyright{
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  .footer #sitemap{
+    width: 25%;
+    justify-content: center;
+  }
+
+</style>
+<body>
+  <div class="header">
+  <b><h1>ACCOMODATION</h1><b>
+  </div>
+  <div class="navbar">
+    <a href="VisitSelangor.html">Home</a>
+    <a href="eatdrink.html">Eat&Drinks</a>
+    <a href="attraction.html">Attraction</a>
+    <a href="tours.html">Tours</a>
+    <a href="accomodation.html" class="active">Accomodation</a>
+  </div>
+
+  <h2>Hotel Around Selangor</h2>
+  <div class="row">
+    <div class="column">
+      <img src="images/Kinrara-Resort.jpg" style="width:90%">
+      <br><p>1. Kinrara Resort</p><br><p>Kinrara Resort consists of modern, tropical villas with rooms that lead right up to the outdoor swimming pool. Daily continental buffet breakfast is served at the in-house restaurant.</p><br><p>Location: Bandar Kinrara, Puchong</p>
+    </div>
+    <div class="column">
+      <img src="images/Philea-Mines.jpg" style="width:90%">
+      <br><p>2. Philea Mines Beach Resort</p><br><p>The vast Philea Mines Beach Resort and its lagoon pool is located next to North Lake, a mining pit lake. Nearby is The Mines Shopping Mall, known for having a canal that passes right through it.</p><br><p>Location: Seri Kembangan</p>
+    </div>
+    <div class="column">
+      <img src="images/The-Villas-Sunway-Resort.jpg" style="width:90%">
+      <br><p>3.The Villas@Sunway Resort Hotel & Spa</p><br><p>Managed by the Sunway Group, you can be assured of world-class hospitality at The Villas@Sunway Resort Hotel & Spa, another resort in Selangor combining modern and tropical design elements.</p><br><p>Location: Sunway</p>
+    </div>
+  </div>
+
+  <br><h4>Stay Connected</h3>
+  <div class="contact">
+    <div class="info">
+      <p>Join us for the latest update</p>
+      <br>
+      <input type="text" id="email" placeholder="Email address">
+      <button onclick="message()">sign up</button>
+    </div>
+    <div class="socmed">
+      <p>Connect with us</p>
+      <a href="https://www.instagram.com/admkhrzmi/"><img src="images/instagram.png"width=15%></a>
+      <a href="https://twitter.com/_akmalnazim"><img src="images/twitter.png"width=15%></a>
+      <a href="https://www.facebook.com/adam.khuarizmi/"><img src="images/facebook.png"width=15%></a>
+    </div>
+  </div>
+  <script>
+  function message(){
+    alert("Thank you for singing up");
+  }
+  </script>
+  <div class="footer">
+    <p id="copyright">Copyright</p>
+    <p id="sitemap"><a href="sitemap.pdf">Sitemap</a> | <a href="https://wa.me/60165349256">Contact Us</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attractions</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: auto;
+            }
+
+            .header {
+                background-color: #E6E9ED;
+                background-image: url(https://selangor.attractionsinmalaysia.com/img/states/selangor.jpg);
+                background-repeat: round;
+                padding: 50px;
+                text-align: left;
+                color: white;
+                font-weight: bold;
+            }
+
+            .navbar {
+                background-color: #08A6D3;
+                color: black;
+                display: flex;
+                justify-content: center;
+            }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+            }
+
+            .navbar a.active {
+                background-color: black;
+                color: white;
+            }
+
+            .navbar a:hover {
+                background-color: black;
+                color: white;
+            }
+
+            h3 {
+                margin-left: 20px;
+            }
+
+            .section {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                align-items: center;
+            }
+
+            .photos {
+                float: left;
+                margin-right: 20vh;
+            }
+
+            .text {
+                display: inline-block;
+            }
+
+            h4 {
+                padding: 20px;
+            }
+            
+            .contact {
+                display: flex;
+                padding: 10px;
+            }
+
+            .contact * {
+                margin-left: 10px;
+            }
+
+            .info {
+                width: 75%;
+                border: solid 2px black;
+            }
+
+            .socmed {
+                width: 25%;
+                padding: 20px;
+                float: right;
+                font-size: 17px;
+            }
+
+            .footer {
+                display: flex;
+                border: solid 2px black;
+            }
+
+            .footer #copyright {
+                width: 75%;
+                padding: 20px;
+                margin-left: 20px;
+            }
+
+            .footer #sitemap {
+                width: 25%;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>ATTRACTIONS</h1>
+        </div>
+
+            <div class="navbar">
+                <a href="Visitselangor.html">Home</a>
+                <a href="eatdrink.html">Eat&Drinks</a>
+                <a href="attractions.html" class="active">Attractions</a>
+                <a href="tours.html">Tours</a>
+                <a href="accomodation.html">Accommodation</a>
+            </div>
+
+            <br><h3>Best places in Selangor</h3>
+
+            <br>
+
+            <div class="section">
+                <div>
+                    <img src="images/sunwaylagoon.jpeg" width="30%" class="photos">
+                    <div class="text">
+                        <br><br><br><br><br>
+                        <b><i>Sunway Lagoon</i></b>
+                        <p>Address: 3, Jalan PJS 11/11, Bandar Sunway, 47500 Subang Jaya, Selangor</p>
+                        <p>Tel No.: 03-5639 0000</p>
+                        <p>Location: <a href="https://goo.gl/maps/F1S7EDHEdt4Cikxk9">Sunway Lagoon</a></p>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <img src="images/batucaves.jpg" width="30%" class="photos">
+                    <div class="text">
+                        <br><br><br><br><br>
+                        <b><i>Batu Caves</i></b>
+                        <p>Address: Gombak, 68100 Batu Caves, Selangor</p>
+                        <p>Tel No.: 03-61896284</p>
+                        <p>Location: <a href="https://goo.gl/maps/kb1TRrj9biyzTXuy6">Batu Caves</a></p>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <img src="images/icity.jpg" width="30%" class="photos">
+                    <div class="text">
+                        <br><br><br><br>
+                        <b><i>I-City Theme Park</i></b>
+                        <p>Address: i-Gallery, Jalan Multimedia, I-City, 40000 Shah Alam, Selangor</p>
+                        <p>Tel No.: 03-55218800</p>
+                        <p>Location: <a href="https://goo.gl/maps/f9jcEbUuXMZvF6HG8">I-City</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <br><h4>Stay connected</h4>
+
+            <div class="contact">
+                <div class="info">
+                    <p>Join us for the latest updates!</p>
+                    <br>
+                    <input type="text" id="email" placeholder="Email Address">
+                    <button onclick="message()">Sign Up!</button>
+                </div>
+
+                <div class="socmed">
+                    <p>Connect with us</p>
+                    <a href="https://www.instagram.com/_akmalnazim/?hl=en"><img src="images/instagram.png" width="15%"></a>
+                    <a href="https://twitter.com/_akmalnazim"><img src="images/twitter.png" width="15%"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100002974519598"><img src="images/facebook.png" width="15%"></a>
+                </div>
+            </div>
+
+            <script>
+                function message() {
+                    alert("Thank you for signing up!");
+                }
+            </script>
+
+            <div class="footer">
+                <p id="copyright">Copyright</p>
+                <p id="sitemap"><a href="sitemap.pdf">Sitemap</a> | <a href="https://wa.me/60165349256">Contact Us</a></p>
+            </div>  
+    </body>
+</html>
