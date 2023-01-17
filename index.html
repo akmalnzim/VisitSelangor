@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<style>
+.navbar{
+  background-color: #08A6D3;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navbar a.active {
+  background-color: black;
+  color: white;
+}
+
+.navbar a:hover{
+  background-color: black;
+  color: white;
+}
+
+.column{
+  float: left;
+  width: 30%;
+  padding: 8px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: grid;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 200px;
+  height: 150px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.rowbelow{
+  float: left;
+  width: 30%;
+  padding: 8px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: grid;
+}
+
+.rowbelow.overlay{
+  position: absolute;
+  bottom: 20;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 800px;
+  height: 800px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 100px;
+  text-align: left;
+}
+
+.rowbelow:hover .overlay{
+  opacity: 1;
+}
+
+.contact{
+  display: flex;
+  padding: 10px;
+}
+
+.contact * {
+  margin-left: 10px;
+}
+
+.info{
+  width: 75%;
+  border: solid 2px;
+  border-color: black;
+}
+
+.socmed{
+  width: 25%;
+  padding: 20px;
+  float: right;
+  font-size: 17px;
+}
+
+.footer {
+    display: flex;
+    border: solid 2px black;
+}
+.footer #copyright {
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.footer #sitemap {
+    width: 25%;
+   justify-content: center;
+  }
+</style>
+<body>
+<div class="header">
+<div class="logo">
+  <a href="VisitSelangor.html"><img src="images\visitselangorlogo.png"></a>
+</div>
+
+<div class = "navbar">
+    <a href ="index.html" class="active"> Home</a>
+    <a href ="eatdrink.html"> Eat&Drinks</a>
+    <a href ="attractions.html"> Attractions</a>
+    <a href ="tours.html"> Tours</a>
+    <a href ="accomodation.html"> Accommodation</a>
+</div>
+
+<div class = "row">
+<h2>Top picks</h2>
+  <div class="rowup">
+    <a href="tours.html"><img src="images\trip.jpg"></a>
+    <br><p>Genting Highlands and Batu Caves Day Tour. To know more click on the picture!</p>
+  </div>
+
+<h2>Popular places</h2>
+<div class="row">
+  <div class="column">
+  <a href="attractions.html"><img src="images\Batu-Caves-Featured-Image.jpg"style=float:left;width:300px;height:300px; object-fit:cover></a>
+  <div class="overlay"> <b>Batu caves</b> are one of the country's biggest tourist attractions and are a place of pilgrimage for Tamil Hindus.Click the picture to know more!</div>
+  </div>
+  <div class="column">
+  <a href="attractions.html"><img src="images\skymirror.jpg"style=float:left;width:300px;height:300px; object-fit:cover></a>
+  <div class="overlay"> <b>Sky Mirror</b> is actually a seabed that appears above water at low tide, exposing an expansive sand flat.Click the picture to know more! </div>
+  </div>
+    <div class="column">
+  <a href="attractions.html"><img src="images\kuala-kubu-bharu-view.jpg"style=float:left;width:300px;height:300px; object-fit:cover></a>
+  <div class="overlay"> <b>Kuala Kubu Bharu</b> is the district capital of Hulu Selangor District, Selangor, Malaysia. It is located 60 km north of Kuala Lumpur.Click the picture to know more! </div>
+  </div>
+</div>
+
+<div class="row">
+<h2>Food highlights</h2>
+  <div class="rowbelow">
+  <a href="eatdrink.html"><img src="images\09b2cdd7bb324afa8aa82dce584e4900_Hjh+Maimunah+Nasi+Ambeng.jpg" style=float:left;width:800px;height:350px; object-fit:cover></a>
+  <div class="overlay"> <b>Nasi ambeng</b> is one of the dishes you must try when you're in Selangor.Click the picture to know more! </div>
+  </div>
+</div>
+
+<br><h4>Stay connected</h4>
+
+<div class="contact">
+  <div class="info">
+    <p>Join us for the latest update!</p>
+    <br>
+    <input type="text" id="email" placeholder="Email address">
+    <button onclick="message()">Sign up</button>
+</div>
+
+<div class="socmed">
+    <p>Connect with us</p>
+    <a href="https://www.instagram.com/syukk.ri/"><img src="images/instagram.png" width=15%></a>
+    <a href="https://twitter.com/syukkk_ri"><img src="images/twitter.png" width=15%></a>
+    <a href="https://www.facebook.com/syukri2001?mibextid=ZbWKwL"><img src="images/facebook.png" width=15%></a>
+  </div>
+</div>
+
+<script>
+  function message() {
+      alert("Thank you for singing up");
+  }
+</script>
+
+<div class="footer">
+      <p id="copyright">Copyright</p>
+      <p id="sitemap"><a href="sitemap.pdf">Sitemap</a> | <a href="https://wa.me/60165349256">Contact Us</a></p>
+</div>
+
+
+</body>
+</html>
